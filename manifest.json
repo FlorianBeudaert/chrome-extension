@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Red Background Extension",
+  "version": "1.0",
+  "description": "Sets the background color to red on every page load.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://my.epitech.eu/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
